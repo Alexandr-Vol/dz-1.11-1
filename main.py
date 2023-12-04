@@ -11,7 +11,6 @@ class Student:
         if isinstance((lecturer, Lecturer)
                       and course in self.courses_attached
                       and course in lecturer.courses_in_progress):
-
             if course in lecturer.grades:
                 lecturer.grades[course] += [grade]
             else:
