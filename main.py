@@ -9,7 +9,6 @@ class Student:
 
     def __lt__(self, other_student):
         if not isinstance(other_student, Student):
-
             return self._get_avg_grades() < other_student._get_avg_grades()
 
     def rate_lecturer(self, lecturer, course, grade):
@@ -117,3 +116,9 @@ some_student = Student('Ruoy', 'Eman', 'your_gender')
 print(some_lecturer)
 print(some_reviewer)
 print(some_student)
+
+# Traceback (most recent call last):
+#  File "c:\Users\tolge\Desktop\dz-1_11-2\main.py", line 110, in <module>
+#    cool_mentor.rate_hw(best_student, 'Python', 10)
+# TypeError: 'list' object is not callable
+# PS C:\Users\tolge\Desktop\dz-1_11-2>
